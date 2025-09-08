@@ -1,0 +1,19 @@
+{
+  "name": "jantinha",
+  "version": "1.0.0",
+  "description": "Uma aplicação web focada em estilização usando frameworks CSS, usa uma API pública que traz aleatoriamente uma receita para sua jantinha!!!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Felipe Da Silva Fadel",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.8",
+    "gh-pages": "^6.3.0"
+  }
+}
