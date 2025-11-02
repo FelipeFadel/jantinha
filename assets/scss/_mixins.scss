@@ -1,0 +1,4 @@
+@mixin espacamento {
+  margin: variables.$espacamento-base;
+  padding: variables.$espacamento-base;
+}

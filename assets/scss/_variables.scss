@@ -1,0 +1,28 @@
+// ==== CORES ====
+// Cor principal para elementos de destaque como títulos, botões e links.
+$cor-primaria: #ec1e24; // Um vermelho vibrante
+
+// Cor de acento, usada para detalhes ou ações secundárias.
+$cor-acento: #f9d1d5; // Um rosa claro e suave
+
+// Cor padrão para a maior parte do texto do site.
+$cor-texto: #212121; // Um cinza muito escuro, quase preto
+
+$cor-fundo: #f2f3f7; // Branco puro para fundos
+
+$cor-secundaria: #469882; // Um verde azulado calmo
+
+$cor-terciaria: #a2e4d2; // Um verde menta claro
+
+// ==== TIPOGRAFIA ====
+// Define a família de fontes principal para o corpo do texto.
+$fonte-principal: "Raleway", sans-serif;
+$fonte-secundaria: "Josefin Sans", sans-serif;
+
+// Define um tamanho base para a fonte. Outros tamanhos (h1, p, etc.) podem ser baseados nela.
+$fonte-tamanho-base: 16px;
+
+// ==== ESPAÇAMENTO ====
+// Uma unidade de espaçamento base para margens e paddings, garantindo consistência.
+$espacamento-base: 1rem; // Equivale a 16px por padrão
+$border-radius: 12px; // Bordas levemente arredondadas para botões e cartões
