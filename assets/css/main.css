@@ -1,0 +1,52 @@
+body {
+  background-color: #f2f3f7;
+}
+
+.navbar {
+  background-color: #f2f3f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  font-family: "Josefin Sans", sans-serif;
+}
+.navbar a {
+  color: #ec1e24;
+}
+.navbar a:hover {
+  color: #212121;
+}
+.navbar a:focus {
+  color: #212121;
+}
+.navbar .active {
+  color: #212121 !important;
+}
+.navbar .btn {
+  color: #212121;
+  border-color: #f2f3f7;
+}
+
+.profile-img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.navbar-brand {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #212121;
+}
+
+.hero-img {
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 6rem;
+}
+.hero-img img {
+  width: 100%;
+  display: block;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,58 @@
+@use "variables";
+@use "base";
+@use "mixins";
+@use "layout";
+
+body {
+  background-color: variables.$cor-fundo;
+}
+
+.navbar {
+  background-color: variables.$cor-fundo;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  font-family: variables.$fonte-secundaria;
+  a {
+    color: variables.$cor-primaria;
+  }
+  a:hover {
+    color: variables.$cor-texto;
+  }
+  a:focus {
+    color: variables.$cor-texto;
+  }
+  .active {
+    color: variables.$cor-texto !important;
+  }
+
+  .btn {
+    color: variables.$cor-texto;
+    border-color: variables.$cor-fundo;
+  }
+}
+
+.profile-img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.navbar-brand {
+  font-family: variables.$fonte-principal;
+  font-weight: 600;
+  font-size: variables.$fonte-tamanho-base * 2;
+  color: variables.$cor-texto;
+}
+
+.hero-img {
+  padding: variables.$espacamento-base;
+  border-radius: variables.$border-radius;
+  margin-top: variables.$espacamento-base * 6;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
