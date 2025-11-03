@@ -1,0 +1,108 @@
+@use "variables";
+@use "mixins";
+@use "layout";
+
+.hero-img {
+  position: relative;
+  width: 90%;
+  height: 600px;
+  margin-top: variables.$espacamento-base * 6;
+  border-radius: variables.$border-radius;
+  overflow: hidden;
+  background-image: url("https://res.cloudinary.com/dyroy9nhm/image/upload/v1762131739/Waflle_dkxjuv.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  .hero-search {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    z-index: 2;
+
+    form {
+        display: flex;
+        background-color: variables.$cor-fundo-claro;
+        border-radius: variables.$border-radius;
+        padding: variables.$espacamento-base / 2;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+      input {
+        flex: 1;
+        border: 1px solid variables.$cor-fundo-claro;
+        border-radius: variables.$border-radius;
+        padding: 0.5rem;
+        font-family: variables.$fonte-principal;
+        font-size: 1rem;
+      }
+
+      button {
+        margin-left: 0.5rem;
+        background-color: variables.$cor-primaria;
+        border: none;
+        color: #fff;
+        border-radius: variables.$border-radius;
+        padding: 0 1rem;
+        font-size: 1rem;
+
+        &:hover {
+          background-color: variables.$cor-secundaria;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 400px; 
+
+    .hero-search {
+      width: 95%; 
+      form {
+        flex-direction: column;
+        padding: 0.75rem;
+
+        input {
+          margin-bottom: 0.5rem;
+          font-size: 0.95rem;
+        }
+
+        button {
+          width: 100%;
+          margin-left: 0;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    height: 350px;
+
+    .hero-search {
+      width: 100%;
+      form {
+        padding: 0.5rem;
+
+        input {
+          font-size: 0.9rem;
+          padding: 0.4rem;
+        }
+
+        button {
+          font-size: 0.9rem;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+}
