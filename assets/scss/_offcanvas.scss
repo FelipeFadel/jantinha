@@ -1,0 +1,50 @@
+@use "variables";
+@use "mixins";
+@use "layout";
+
+.offcanvas {
+  background-color: variables.$cor-fundo; 
+  color: variables.$cor-texto;
+  font-family: variables.$fonte-secundaria;
+  width: 260px; // tamanho confortável
+
+  .offcanvas-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    h5 {
+      color: variables.$cor-primaria;
+      font-weight: 600;
+      font-size: variables.$font-size * 1.2;
+    }
+
+    .btn-close {
+      opacity: 0.8;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .offcanvas-body {
+    padding-top: variables.$espacamento-base * 1.5;
+
+    .navbar-nav {
+      .nav-item {
+        margin-bottom: variables.$espacamento-base * 0.5;
+
+        .nav-link {
+          color: variables.$cor-texto;
+          font-size: variables.$font-size * 0.9;
+          padding: 0.75rem 1rem;
+          border-radius: variables.$border-radius;
+          transition: background-color 0.2s, color 0.2s;
+
+          &:hover,
+          &:focus {
+            background-color: variables.$cor-primaria;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
