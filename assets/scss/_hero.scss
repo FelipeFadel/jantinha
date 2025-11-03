@@ -48,7 +48,7 @@
 
       button {
         margin-left: 0.5rem;
-        background-color: variables.$cor-primaria;
+        background-color: variables.$cor-primaria !important;
         border: none;
         color: #fff;
         border-radius: variables.$border-radius;

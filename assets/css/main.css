@@ -50,7 +50,7 @@
 }
 .hero-img .hero-search form button {
   margin-left: 0.5rem;
-  background-color: #ec1e24;
+  background-color: #ec1e24 !important;
   border: none;
   color: #fff;
   border-radius: 12px;
