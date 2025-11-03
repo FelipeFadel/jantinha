@@ -21,279 +21,383 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body id="home">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-      <div class="container">
-        <a class="navbar-brand" href="#home">
-          <img
-            src="assets/resources/images/Logo.png"
-            alt="Logo Jantinha"
-            style="width: 40px; height: 40px; object-fit: contain"
-            class="d-inline-block align-text-top me-2"
-          />
-          Jantinha
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#menuOffcanvas"
-          aria-controls="menuOffcanvas"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="#home"
-                ><i class="bi bi-house-door me-1"></i>Início</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#categories"
-                ><i class="bi bi-grid me-1"></i>Categorias</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#recipes"
-                ><i class="bi bi-journal-text me-1"></i>Minhas receitas</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#account"
-                ><i class="bi bi-person me-1"></i>Conta</a
-              >
-            </li>
-          </ul>
-          <form class="d-flex ms-lg-3" role="search">
-            <input
-              type="search"
-              class="form-control form-control-sm me-2"
-              placeholder="Buscar..."
-              aria-label="Buscar"
-            />
-            <button class="btn btn-outline-light btn-sm" type="submit">
-              <i class="bi bi-search"></i>
-            </button>
-          </form>
-          <button
-            type="button"
-            class="btn btn-light ms-lg-3 position-relative"
-            title="Favoritos"
-          >
-            <i class="bi bi-suit-heart text-danger"></i>
-            <span
-              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-            >
-              3
-            </span>
-          </button>
-          <div class="d-flex align-items-center ms-3">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+        <div class="container">
+          <div class="navbar-brand d-flex align-items-center" href="#home">
             <img
-              src="https://media.gettyimages.com/id/1317804578/pt/foto/one-businesswoman-headshot-smiling-at-the-camera.jpg?s=612x612&w=gi&k=20&c=IcBzSV04zCeMVk3kty-1RtusxibnF2pxD32QgBMzVu8="
-              alt="profile"
-              class="rounded-circle border border-2"
-              style="width: 40px; height: 40px; object-fit: cover"
+              src="assets/resources/images/Logo.png"
+              alt="Logo Jantinha"
+              style="width: 40px; height: 40px; object-fit: contain"
+              class="me-2"
             />
+            <h3 class="mb-0">Jantinha</h3>
+          </div>
+
+          <!-- Botão hamburguer -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#menuOffcanvas"
+            aria-controls="menuOffcanvas"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Itens da navbar (desktop) -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home"
+                  ><i class="bi bi-house-door me-1"></i>Início</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#categorias"
+                  ><i class="bi bi-grid me-1"></i>Categorias</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/recipes.html"
+                  ><i class="bi bi-journal-text me-1"></i>Minhas receitas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/account.html"
+                  ><i class="bi bi-person me-1"></i>Conta</a
+                >
+              </li>
+            </ul>
+
+            <form action="search.html" class="d-flex ms-lg-3" role="search">
+              <input
+                type="search"
+                class="form-control form-control-sm me-2"
+                placeholder="Buscar..."
+                aria-label="Buscar"
+              />
+              <button class="btn btn-outline-light btn-sm" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+
+            <button
+              type="button"
+              class="btn btn-light ms-lg-3 position-relative"
+              title="Favoritos"
+            >
+              <i class="bi bi-suit-heart text-danger"></i>
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+              >
+                3
+              </span>
+            </button>
+
+            <div class="d-flex align-items-center ms-3">
+              <img
+                src="https://res.cloudinary.com/dyroy9nhm/image/upload/v1762181937/Terrywebp_nrjonv.webp"
+                alt="profile"
+                class="rounded-circle border border-2"
+                style="width: 40px; height: 40px; object-fit: cover"
+              />
+            </div>
           </div>
         </div>
+      </nav>
+
+      <!-- Offcanvas lateral -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="menuOffcanvas"
+        aria-labelledby="menuOffcanvasLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="menuOffcanvasLabel">Menu</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Fechar"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html#categorias">Categorias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/recipes.html">Minhas receitas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/account.html">Conta</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </nav>
+    </header>
     <!-- navbar -->
 
-    <div
-      class="container-sm d-flex justify-content-center align-items-center hero-img"
-    >
-      <img
-        class="img-fluid"
-        src="https://placehold.co/800x500"
-        alt="Hero Image"
-      />
-    </div>
-
-    <!-- OffCanvas-->
-    <div
-      class="offcanvas offcanvas-start"
-      tabindex="-1"
-      id="menuOffcanvas"
-      aria-labelledby="menuOffcanvasLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="menuOffcanvasLabel">Jantinha</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#categories">Categorias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="acomodacoes.html">Acomodações</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#recipes">Minhas receitas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#account">Conta</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
     <main>
+      <!-- Hero -->
+      <div class="container-sm hero-img position-relative">
+        <!-- Campo de pesquisa sobreposto -->
+        <div
+          class="hero-search position-absolute top-50 start-50 translate-middle w-75 w-md-50"
+        >
+          <form action="search.html" class="shadow-lg" role="search">
+            <input
+              type="search"
+              class="form-control me-2"
+              placeholder="Buscar receitas, pratos ou ingredientes..."
+              aria-label="Buscar"
+            />
+            <button class="btn btn-primary" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="categorias" class="text-center mb-5 my-5">
+        <h2 class="fw-bold">Categorias</h2>
+        <p class="text-muted">
+          Explore as diferentes categorias de receitas disponíveis
+        </p>
+      </div>
+
       <div class="container my-5">
         <div class="row g-4 mt-4">
-          <!-- Card 1 -->
+          <!-- Categoria 1 -->
           <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="card h-100">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoIeXuAS-MClRFPI8GYEai40U47rBzSwdgqw&s"
-                class="card-img-top"
-                alt="Foto do Hotel Recanto Feliz"
-              />
+            <div class="card h-100 text-center">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_500,f_auto,q_auto/v1762131557/Lasanha_mjmmhv.webp   500w,
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_1000,f_auto,q_auto/v1762131557/Lasanha_mjmmhv.webp 1000w,
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_1500,f_auto,q_auto/v1762131557/Lasanha_mjmmhv.webp 1500w
+                  "
+                  sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_500,f_auto,q_auto/v1762131557/Lasanha_mjmmhv.jpg   500w,
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_1000,f_auto,q_auto/v1762131557/Lasanha_mjmmhv.jpg 1000w,
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_1500,f_auto,q_auto/v1762131557/Lasanha_mjmmhv.jpg 1500w
+                  "
+                  sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+                />
+                <img
+                  src="https://res.cloudinary.com/dyroy9nhm/image/upload/w_1000,f_auto,q_auto/v1762131557/Lasanha_mjmmhv.webp"
+                  class="card-img-top img-fluid rounded"
+                  alt="Lasanha italiana tradicional com molho e queijo derretido"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Curry Tailandes Picante</h5>
-                <p class="card-text">
-                  Uma explosão de sabores com este prato picante, perfeito para
-                  quem ama comida exótica.
+                <h5 class="card-title">Massas</h5>
+                <p class="card-text text-muted">
+                  Clássicos italianos e combinações criativas de molhos e massas
+                  frescas.
                 </p>
-                <p class="card-text"><strong>Preço médio:</strong> R$ 50,00</p>
-                <div class="text-warning mb-3">
-                  <i class="bi bi-star-fill"></i
-                  ><i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-half"></i>
-                  <span class="text-muted">(4.5)</span>
+                <div
+                  class="mt-auto d-flex justify-content-between align-items-center"
+                >
+                  <a href="#" class="btn btn-primary flex-grow-1 me-2"
+                    >Ver receitas</a
+                  >
+                  <button
+                    class="btn btn-outline-danger btn-square"
+                    title="Favoritar"
+                  >
+                    <i class="bi bi-heart"></i>
+                  </button>
                 </div>
-                <a href="#" class="btn btn-primary mt-auto">Ver detalhes</a>
               </div>
             </div>
           </div>
-          <!-- Card 1 -->
-          <!-- Card 2 -->
+
+          <!-- Categoria 2 -->
           <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="card h-100">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoIeXuAS-MClRFPI8GYEai40U47rBzSwdgqw&s"
-                class="card-img-top"
-                alt="Foto do Hotel Recanto Feliz"
-              />
+            <div class="card h-100 text-center">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_500,f_auto,q_auto/v1762131558/sushi_a4f3jh.webp   500w,
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_1000,f_auto,q_auto/v1762131558/sushi_a4f3jh.webp 1000w,
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_1500,f_auto,q_auto/v1762131558/sushi_a4f3jh.webp 1500w
+                  "
+                  sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_500,f_auto,q_auto/v1762131558/sushi_a4f3jh.jpg   500w,
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_1000,f_auto,q_auto/v1762131558/sushi_a4f3jh.jpg 1000w,
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_1500,f_auto,q_auto/v1762131558/sushi_a4f3jh.jpg 1500w
+                  "
+                  sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+                />
+                <img
+                  src="https://res.cloudinary.com/dyroy9nhm/image/upload/w_1000,f_auto,q_auto/v1762131558/sushi_a4f3jh.webp"
+                  class="card-img-top img-fluid rounded"
+                  alt="Comida Japonesa"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Curry Tailandes Picante</h5>
-                <p class="card-text">
-                  Uma explosão de sabores com este prato picante, perfeito para
-                  quem ama comida exótica.
+                <h5 class="card-title">Comida Japonesa</h5>
+                <p class="card-text text-muted">
+                  Sushis, sashimis e pratos quentes típicos do Japão.
                 </p>
-                <p class="card-text"><strong>Preço médio:</strong> R$ 50,00</p>
-                <div class="text-warning mb-3">
-                  <i class="bi bi-star-fill"></i
-                  ><i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-half"></i>
-                  <span class="text-muted">(4.5)</span>
+                <div
+                  class="mt-auto d-flex justify-content-between align-items-center"
+                >
+                  <a href="#" class="btn btn-primary flex-grow-1 me-2"
+                    >Ver receitas</a
+                  >
+                  <button
+                    class="btn btn-outline-danger btn-square"
+                    title="Favoritar"
+                  >
+                    <i class="bi bi-heart"></i>
+                  </button>
                 </div>
-                <a href="#" class="btn btn-primary mt-auto">Ver detalhes</a>
               </div>
             </div>
           </div>
-          <!-- Card 2 -->
-          <!-- Card 3 -->
+
+          <!-- Categoria 3 -->
           <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="card h-100">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoIeXuAS-MClRFPI8GYEai40U47rBzSwdgqw&s"
-                class="card-img-top"
-                alt="Foto do Hotel Recanto Feliz"
-              />
+            <div class="card h-100 text-center">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_500,f_auto,q_auto/v1762131558/salada_q9hyaw.webp   500w,
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_1000,f_auto,q_auto/v1762131558/salada_q9hyaw.webp 1000w,
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_1500,f_auto,q_auto/v1762131558/salada_q9hyaw.webp 1500w
+                  "
+                  sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_500,f_auto,q_auto/v1762131558/salada_q9hyaw.jpg   500w,
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_1000,f_auto,q_auto/v1762131558/salada_q9hyaw.jpg 1000w,
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_1500,f_auto,q_auto/v1762131558/salada_q9hyaw.jpg 1500w
+                  "
+                  sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+                />
+                <img
+                  src="https://res.cloudinary.com/dyroy9nhm/image/upload/w_1000,f_auto,q_auto/v1762131558/salada_q9hyaw.webp"
+                  class="card-img-top img-fluid rounded"
+                  alt="Saladas"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Curry Tailandes Picante</h5>
-                <p class="card-text">
-                  Uma explosão de sabores com este prato picante, perfeito para
-                  quem ama comida exótica.
+                <h5 class="card-title">Saladas</h5>
+                <p class="card-text text-muted">
+                  Receitas leves e saudáveis, com combinações frescas e
+                  coloridas.
                 </p>
-                <p class="card-text"><strong>Preço médio:</strong> R$ 50,00</p>
-                <div class="text-warning mb-3">
-                  <i class="bi bi-star-fill"></i
-                  ><i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-half"></i>
-                  <span class="text-muted">(4.5)</span>
+                <div
+                  class="mt-auto d-flex justify-content-between align-items-center"
+                >
+                  <a href="#" class="btn btn-primary flex-grow-1 me-2"
+                    >Ver receitas</a
+                  >
+                  <button
+                    class="btn btn-outline-danger btn-square"
+                    title="Favoritar"
+                  >
+                    <i class="bi bi-heart"></i>
+                  </button>
                 </div>
-                <a href="#" class="btn btn-primary mt-auto">Ver detalhes</a>
               </div>
             </div>
           </div>
-          <!-- Card 3 -->
-          <!-- Card 4 -->
+
+          <!-- Categoria 4 -->
           <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="card h-100">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoIeXuAS-MClRFPI8GYEai40U47rBzSwdgqw&s"
-                class="card-img-top"
-                alt="Foto do Hotel Recanto Feliz"
-              />
+            <div class="card h-100 text-center">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_500,f_auto,q_auto/v1762131553/risoto_q1yh0i.webp   500w,
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_1000,f_auto,q_auto/v1762131553/risoto_q1yh0i.webp 1000w,
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_1500,f_auto,q_auto/v1762131553/risoto_q1yh0i.webp 1500w
+                  "
+                  sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+                />
+                <source
+                  type="image/jpeg"
+                  srcset="
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_500,f_auto,q_auto/v1762131553/risoto_q1yh0i.jpg   500w,
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_1000,f_auto,q_auto/v1762131553/risoto_q1yh0i.jpg 1000w,
+                    https://res.cloudinary.com/dyroy9nhm/image/upload/w_1500,f_auto,q_auto/v1762131553/risoto_q1yh0i.jpg 1500w
+                  "
+                  sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+                />
+                <img
+                  src="https://res.cloudinary.com/dyroy9nhm/image/upload/w_1000,f_auto,q_auto/v1762131553/risoto_q1yh0i.webp"
+                  class="card-img-top img-fluid rounded"
+                  alt="Risotos"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Curry Tailandes Picante</h5>
-                <p class="card-text">
-                  Uma explosão de sabores com este prato picante, perfeito para
-                  quem ama comida exótica.
+                <h5 class="card-title">Risotos</h5>
+                <p class="card-text text-muted">
+                  Cremosos, sofisticados e cheios de sabor. São perfeitos para
+                  ocasiões especiais.
                 </p>
-                <p class="card-text"><strong>Preço médio:</strong> R$ 50,00</p>
-                <div class="text-warning mb-3">
-                  <i class="bi bi-star-fill"></i
-                  ><i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-half"></i>
-                  <span class="text-muted">(4.5)</span>
+                <div
+                  class="mt-auto d-flex justify-content-between align-items-center"
+                >
+                  <a href="#" class="btn btn-primary flex-grow-1 me-2"
+                    >Ver receitas</a
+                  >
+                  <button
+                    class="btn btn-outline-danger btn-square"
+                    title="Favoritar"
+                  >
+                    <i class="bi bi-heart"></i>
+                  </button>
                 </div>
-                <a href="#" class="btn btn-primary mt-auto">Ver detalhes</a>
               </div>
             </div>
           </div>
-          <!-- Card 4 -->
-          <!-- Card 5 -->
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <div class="card h-100">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoIeXuAS-MClRFPI8GYEai40U47rBzSwdgqw&s"
-                class="card-img-top"
-                alt="Foto do Hotel Recanto Feliz"
-              />
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Curry Tailandes Picante</h5>
-                <p class="card-text">
-                  Uma explosão de sabores com este prato picante, perfeito para
-                  quem ama comida exótica.
-                </p>
-                <p class="card-text"><strong>Preço médio:</strong> R$ 50,00</p>
-                <div class="text-warning mb-3">
-                  <i class="bi bi-star-fill"></i
-                  ><i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-half"></i>
-                  <span class="text-muted">(4.5)</span>
-                </div>
-                <a href="#" class="btn btn-primary mt-auto">Ver detalhes</a>
-              </div>
-            </div>
-          </div>
-          <!-- Card 5 -->
         </div>
       </div>
     </main>
     <!-- main -->
-    <!-- OffCanvas/-->
+
+    <footer class="bg-dark text-light text-center py-4 mt-5">
+      <p class="mb-0">&copy; 2025 Jantinha. Usando bootstrap5.</p>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

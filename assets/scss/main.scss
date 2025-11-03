@@ -1,28 +1,34 @@
 @use "variables";
-@use "base";
 @use "mixins";
 @use "layout";
+@use "account";
+@use "hero";
+@use "offcanvas";
 
 body {
   background-color: variables.$cor-fundo;
+  font-family: variables.$fonte-principal;
+  color: variables.$cor-texto;
 }
 
 .navbar {
   background-color: variables.$cor-fundo;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navbar {
   font-family: variables.$fonte-secundaria;
+
+  h3{
+    font-size: variables.$font-size * 2;
+    color: variables.$cor-texto; 
+  }
+
   a {
     color: variables.$cor-primaria;
+    &:hover,
+    &:focus {
+      color: variables.$cor-texto;
+    }
   }
-  a:hover {
-    color: variables.$cor-texto;
-  }
-  a:focus {
-    color: variables.$cor-texto;
-  }
+
   .active {
     color: variables.$cor-texto !important;
   }
@@ -31,28 +37,84 @@ body {
     color: variables.$cor-texto;
     border-color: variables.$cor-fundo;
   }
-}
-
-.profile-img {
-  width: 30px;
-  height: 30px;
-  object-fit: cover;
-}
-
-.navbar-brand {
-  font-family: variables.$fonte-principal;
-  font-weight: 600;
-  font-size: variables.$fonte-tamanho-base * 2;
-  color: variables.$cor-texto;
-}
-
-.hero-img {
-  padding: variables.$espacamento-base;
-  border-radius: variables.$border-radius;
-  margin-top: variables.$espacamento-base * 6;
-
-  img {
-    width: 100%;
-    display: block;
+  .navbar-toggler-icon{
+    filter: invert(1);
   }
+}
+
+// Cards
+.card {
+  border-radius: variables.$border-radius;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  .card-title {
+    color: variables.$cor-primaria;
+    font-family: variables.$fonte-principal;
+  }
+
+  .card-text {
+    color: variables.$cor-texto;
+  }
+
+  .btn {
+    background-color: variables.$cor-primaria;
+    color: #fff;
+    border-radius: variables.$border-radius;
+    border: none;
+    &:hover {
+      background-color: variables.$cor-secundaria;
+      color: variables.$cor-texto;
+    }
+  }
+
+  .text-warning i {
+    color: variables.$cor-primaria;
+  }
+}
+
+.recipe-actions {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 0.5rem;
+
+  a.btn-primary {
+    flex: 1; 
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  button.btn-outline-danger {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+
+    i {
+      font-size: 1.1rem;
+    }
+
+    &:hover {
+      background-color: #dc3545;
+      color: #fff;
+    }
+  }
+}
+
+h2 {
+  font-size: clamp(2rem, 2vw + 1rem, 2.5rem); 
+}
+
+p,
+label,
+button,
+input {
+  font-size: clamp(1rem, 0.8vw + 0.5rem, 1.1rem);
 }
