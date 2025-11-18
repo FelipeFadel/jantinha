@@ -23,7 +23,7 @@
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <base href="/jantinha/" />
+    <!-- <base href="/jantinha/" /> -->
   </head>
 
   <body id="account" class="bg-light">
@@ -164,6 +164,35 @@
         <p class="text-muted">Gerencie suas preferências nessa pagina</p>
       </section>
 
+      <section class="card p-4 shadow-sm mb-4">
+        <h4 class="fw-bold mb-3">Informações do usuário</h4>
+        <form>
+          <div class="d-flex flex-wrap gap-3">
+            <input
+              type="text"
+              id="nomeInput"
+              class="form-control"
+              placeholder="Nome de usuário"
+            />
+            <div class="flex-grow-1" style="min-width: 250px">
+              <label for="bioInput" class="form-label visually-hidden"
+                >Biografia</label
+              >
+              <textarea
+                id="bioInput"
+                class="form-control"
+                rows="4"
+                maxlength="300"
+                placeholder="Conte algo sobre você (máx. 300 caracteres)"
+              ></textarea>
+              <div class="d-flex justify-content-end mt-1">
+                <small id="bioCount" class="text-muted">0/300</small>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+
       <!-- Preferências -->
       <section class="card p-4 shadow-sm mb-4">
         <h4 class="fw-bold mb-3">Restrições Alimentares</h4>
@@ -230,6 +259,9 @@
 
       <div class="text-center">
         <button class="btn btn-success px-5 py-2">Salvar Preferências</button>
+        <button class="btn btn-danger px-5 py-2">
+          Limpar suas Preferências
+        </button>
       </div>
     </main>
 
@@ -239,5 +271,6 @@
     </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/account.js"></script>
   </body>
 </html>

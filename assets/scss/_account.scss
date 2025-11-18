@@ -5,8 +5,18 @@
 .user-avatar {
   width: clamp(140px, 20vw, 250px);
   height: clamp(140px, 20vw, 250px);
-  object-fit: cover; 
+  object-fit: cover;
   border: 3px solid variables.$cor-primaria;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
 
+.text-center {
+  .btn-danger {
+    background-color: variables.$cor-secundaria;
+    border-color: variables.$cor-secundaria;
+  }
+  .btn-success {
+    background-color: variables.$cor-primaria;
+    border-color: variables.$cor-primaria;
+  }
 }

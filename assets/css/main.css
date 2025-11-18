@@ -1,9 +1,19 @@
 .user-avatar {
   width: clamp(140px, 20vw, 250px);
   height: clamp(140px, 20vw, 250px);
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: 3px solid #ec1e24;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.text-center .btn-danger {
+  background-color: #469882;
+  border-color: #469882;
+}
+.text-center .btn-success {
+  background-color: #ec1e24;
+  border-color: #ec1e24;
 }
 
 .hero-img {
@@ -237,6 +247,4 @@ label,
 button,
 input {
   font-size: clamp(1rem, 0.8vw + 0.5rem, 1.1rem);
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
