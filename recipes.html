@@ -23,7 +23,7 @@
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <base href="/jantinha/" />
+    <!-- <base href="/jantinha/" /> -->
   </head>
 
   <body id="recipes">
@@ -81,9 +81,10 @@
             <form action="search.html" class="d-flex ms-lg-3" role="search">
               <input
                 type="search"
+                name="q"
                 class="form-control form-control-sm me-2"
                 placeholder="Buscar..."
-                aria-label="Buscar"
+                required
               />
               <button class="btn btn-outline-light btn-sm" type="submit">
                 <i class="bi bi-search"></i>
@@ -497,5 +498,6 @@
     </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/search.js"></script>
   </body>
 </html>

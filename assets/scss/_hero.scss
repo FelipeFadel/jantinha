@@ -34,7 +34,7 @@
         display: flex;
         background-color: variables.$cor-fundo-claro;
         border-radius: variables.$border-radius;
-        padding: variables.$espacamento-base / 2;
+        padding: calc(variables.$espacamento-base / 2);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 
       input {

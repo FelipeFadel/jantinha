@@ -81,9 +81,10 @@
             <form action="search.html" class="d-flex ms-lg-3" role="search">
               <input
                 type="search"
+                name="q"
                 class="form-control form-control-sm me-2"
                 placeholder="Buscar..."
-                aria-label="Buscar"
+                required
               />
               <button class="btn btn-outline-light btn-sm" type="submit">
                 <i class="bi bi-search"></i>
@@ -174,7 +175,9 @@
               id="nomeInput"
               class="form-control"
               placeholder="Nome de usuário"
+              pattern="^[A-Za-zÀ-ÖØ-öø-ÿ]{2,}(?:\s+[A-Za-zÀ-ÖØ-öø-ÿ]{2,})+$"
               autofocus
+              required
             />
             <div class="flex-grow-1" style="min-width: 250px">
               <label for="bioInput" class="form-label visually-hidden"
@@ -184,10 +187,12 @@
                 id="bioInput"
                 class="form-control"
                 rows="4"
-                maxlength="300"
+                minlength="10"
                 placeholder="Conte algo sobre você (máx. 300 caracteres)"
+                required
               ></textarea>
-              <div class="d-flex justify-content-end mt-1">
+              <div class="d-flex justify-content-between mt-1">
+                <span class="erro" id="erroBio"></span>
                 <small id="bioCount" class="text-muted">0/300</small>
               </div>
             </div>
@@ -196,36 +201,10 @@
               id="idadeInput"
               class="form-control"
               placeholder="Idade"
+              min="8"
+              max="120"
+              required
             />
-          </div>
-        </form>
-      </section>
-
-      <section class="card p-4 shadow-sm mb-4">
-        <h4 class="fw-bold mb-3">Informações do usuário</h4>
-        <form>
-          <div class="d-flex flex-wrap gap-3">
-            <input
-              type="text"
-              id="nomeInput"
-              class="form-control"
-              placeholder="Nome de usuário"
-            />
-            <div class="flex-grow-1" style="min-width: 250px">
-              <label for="bioInput" class="form-label visually-hidden"
-                >Biografia</label
-              >
-              <textarea
-                id="bioInput"
-                class="form-control"
-                rows="4"
-                maxlength="300"
-                placeholder="Conte algo sobre você (máx. 300 caracteres)"
-              ></textarea>
-              <div class="d-flex justify-content-end mt-1">
-                <small id="bioCount" class="text-muted">0/300</small>
-              </div>
-            </div>
           </div>
         </form>
       </section>
@@ -317,7 +296,15 @@
       <p class="mb-0">&copy; 2025 Jantinha. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- jQuery deve ser carregado primeiro -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Depois, plugins que dependem do jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/account.js"></script>
+    <script src="js/search.js"></script>
   </body>
 </html>
