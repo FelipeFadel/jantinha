@@ -15,10 +15,10 @@ Esse arquivo `db.json` contem as nossas receitas salvas.
 
 ## Sobre as bibliotecas usadas
 
-**- Json Server
-- Sass
-- bootstrap
-**
+- **Json Server**
+- **Sass**
+- **bootstrap**
+
 
 ## Ver a aplicação
 
