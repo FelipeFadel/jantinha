@@ -26,6 +26,8 @@ Para ver a aplicação rodando remotamente você pode acessar via: https://felip
 
 Podemos ver o design system proposto no figma (ID0) no seguinte link: www.figma.com/design/nKdhKi12R8OaQvQ6SYuINb/Jantinha?node-id=1-3&p=f&t=J0LC20JXytKYC5EA-0
 
+Podemos ver a explicação de como funciona a parte Javascript da nossa aplicação através do seguinte video: https://www.youtube.com/watch?v=D4iQzAQ4t4E
+
 ## Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
 #### RA1 - Utilizar Frameworks CSS para estilização de elementos HTML e criação de layouts responsivos.
