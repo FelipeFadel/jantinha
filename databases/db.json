@@ -1,3 +1,33 @@
 {
-  "favoritos": []
+  "favoritos": [
+    {
+      "id": "884e",
+      "idMeal": "53139",
+      "titulo": "Fainá",
+      "imagem": "https://www.themealdb.com/images/media/meals/849jd81763075251.jpg",
+      "categoria": "Side"
+    },
+    {
+      "id": "0714",
+      "idMeal": "52906",
+      "titulo": "Flamiche",
+      "imagem": "https://www.themealdb.com/images/media/meals/wssvvs1511785879.jpg",
+      "categoria": "Vegetarian"
+    },
+    {
+      "id": "14b6",
+      "idMeal": "52802",
+      "titulo": "Fish pie",
+      "imagem": "https://www.themealdb.com/images/media/meals/ysxwuq1487323065.jpg",
+      "categoria": "Seafood"
+    },
+    {
+      "id": "5e20",
+      "idMeal": "52935",
+      "titulo": "Steak Diane",
+      "imagem": "https://www.themealdb.com/images/media/meals/vussxq1511882648.jpg",
+      "categoria": "Beef"
+    }
+
+  ]
 }

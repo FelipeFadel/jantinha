@@ -23,7 +23,8 @@
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <base href="/jantinha/" /> -->
+    <base href="/jantinha/" />
+    <!-- Acima precisa ser comentado/removido na versão local da aplicação -->
   </head>
 
   <body id="search" class="d-flex flex-column min-vh-100">
@@ -190,8 +191,9 @@
                   >Ver receitas</a
                 >
                 <button
-                  class="btn btn-outline-danger btn-square"
+                  class="btn btn-outline-danger btn-square btn-favorito"
                   title="Favoritar"
+                  data-id=""
                 >
                   <i class="bi bi-heart"></i>
                 </button>
@@ -238,7 +240,7 @@
       </div>
     </main>
 
-    <!-- Rodapé -->
+    <!-- Rodape -->
     <footer class="bg-dark text-light text-center py-4 mt-auto">
       <p class="mb-0">&copy; 2025 Jantinha. Usando bootstrap5.</p>
     </footer>
